@@ -11,20 +11,22 @@ import Contact from './Contact/Contact';
 import {createBrowserRouter , RouterProvider} from 'react-router-dom'
 
 
-const routes = createBrowserRouter([
-  {path:'/',element:<MasterLayout/> , children:[
-    {index:true ,element:<Home/>},
-    {path:'Home' , element:<Home/>},
-    {path:'Portfolio',element:<Portfolio/>},
-    {path:'About',element:<About/>},
-    {path:'Contact',element:<Contact/>},
-    {path:'*',element:<Home/>}
-    ]}
- ])
+
 
 
 
 function App() {
+
+  const routes = createBrowserRouter([
+    {path:'/',element:<MasterLayout/> , children:[
+      {index:true ,element:<Home/>},
+      {path:'Home' , element:<Home/>},
+      {path:'Portfolio',element:<Portfolio/>},
+      {path:'About',element:<About/>},
+      {path:'Contact',element:<Contact/>},
+      {path:'*',element:<Home/>}
+      ]}
+   ])
 
 
 
