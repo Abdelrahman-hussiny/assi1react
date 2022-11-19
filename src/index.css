@@ -11,3 +11,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-item .nav-link:active{
+  color: white !important; 
+  background-color: #1abc9c !important;
+  border-radius: 25px;
+}
+
+.nav-item .nav-link{
+  color: white;
+  font-weight: 600;
+}
+.nav-item .nav-link:hover{
+  color: #1abc9c;
+}
+.horiz-line-right{
+  
+  width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    
+    border-radius: 1rem;
+    border-color: #2c3e50 ;
+}
+.horiz-line-left{
+  width: 100%;
+  max-width: 7rem;
+  height: 0.25rem;
+  border-radius: 1rem;
+  border-color: #2c3e50 ;
+}
+.lines{
+  margin-left: -2rem;
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layer{
+  width: 94%;
+  height: 100%;
+  top: 0%;
+  background-color: rgba(26, 188, 156, 0.9);
+  opacity: 0;
+  transition: all 0.4s ;
+}
+.layer-content{
+ font-size: 85px;
+ font-weight: 600;
+ color: white;
+ padding: 65px;
+}
+.layer:hover{
+  text-align: center;
+  opacity: 1;
+}
+.m-2:hover i{
+color: black;
+background-color:white;
+transition: all 0.4s;
+}
